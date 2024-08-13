@@ -1,0 +1,21 @@
+body { 
+    background-color: rgba(245, 244, 238, 0.863);
+    height: 100%;
+    margin: 0;
+}
+
+#texto { 
+    background-color: rgba(0, 0, 0, 0.082);
+    width: 200px;
+    border-radius: 16px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    min-width: 325; 
+    max-width: 440;
+    margin: auto;
+    top: 30px;
+    
+}
+

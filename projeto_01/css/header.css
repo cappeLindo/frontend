@@ -1,0 +1,41 @@
+header { 
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    min-width: 325;
+    max-width: 440;
+    color: aliceblue;
+}
+
+#text1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: end;
+    margin-right: 60px;
+    position: relative;
+    font-style: oblique;
+    
+}
+
+.text2 { 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(245, 4, 4);
+    padding-bottom: 60px;
+    text-align: end;
+    margin-right: 20px;
+
+}
+.menu { 
+    width: 30px;
+    position: relative;
+    bottom: 150px;
+    font-size: 30px;
+    left: 13px;
+}
+    

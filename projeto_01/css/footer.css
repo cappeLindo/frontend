@@ -1,0 +1,25 @@
+footer { 
+    position: relative;
+    margin-top: 81%;
+    font-size: 20px;
+    position: relative;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 20px;
+    color: aliceblue;
+    font-style: italic;
+    min-width: 325; 
+    max-width: 440;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.instagram { 
+    size: 30px;
+    bottom: 40px;
+}
