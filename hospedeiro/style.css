@@ -10,13 +10,13 @@ body {
 
 .container { 
     width: 335px;
-    height: 500px;
+    height: 470px;
     border-radius: 2rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.212);
     margin: auto;
     display: flex;
-    top: 2.6rem;
+    top: 1.3rem;
     position: relative;
     
 }
@@ -25,7 +25,7 @@ body {
     font-family: JetBrains Mono;
     position: relative;
     text-align: center;
-    top: 7rem;
+    top: 6rem;
     left: 50%;
     transform: translate(-50%, -50%); 
     z-index: 10; 
@@ -49,8 +49,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 2.2rem;
+    top: 2rem;
+    filter:  drop-shadow(5px 3px 5px rgba(33, 48, 59, 0.733));
 }
+
 
 .footer { 
     font-family: JetBrains Mono;
@@ -75,5 +77,5 @@ body {
 
 .textos p:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(201, 18, 18, 0.781);
 }
