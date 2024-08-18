@@ -1,0 +1,115 @@
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing:  1px;
+    font-family:  JetBrains Mono;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+:root { 
+    --color-header: #1E1E1E;
+    --color-pesquisa: #d9d9d9;
+    --color-neutro: #b1b1b1;
+    --color-opcao: #333333;
+    --color-barra1: #01B1FC;
+    --color-barra2: #64DBB9;
+    --color-barra3: #A037DD;
+    --color-neutro-20: #ffffff;
+}
+
+main { 
+    height: 80vh;
+}
+
+footer { 
+    width: 100%;
+    color: var(--color-neutro);
+}
+
+.footer-link { 
+    text-decoration: none;
+}
+
+.barra { 
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, var(--color-barra1), var(--color-barra2), var(--color-barra3));
+}
+
+#footer_content { 
+    background-color:  var(--color-header);
+    display:  grid;
+    grid-template-columns:  repeat(4 , 1fr);
+    padding: 2rem 1.5rem;
+}
+
+#footer_content  h1{ 
+    margin-bottom: 0.75rem;
+
+}
+
+#footer_social_media { 
+    display: flex;
+    gap: 2rem;
+    margin-top:  1.5rem;
+    align-items: center;
+
+
+}
+
+#footer_social_media .footer-link { 
+    height: 2.5rem;
+    width: 2.5rem;
+    color:  var(--color-neutro-20);
+
+   
+}
+#footer_social_media .footer-link i { 
+    font-size: 2.2rem;
+}
+
+#footer_social_media .footer-link:hover { 
+    opacity: 0.8;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link { 
+    color: var(--color-neutro-20);
+    transition:  ease-out 0.4s;
+}
+
+.footer-list .footer-link:hover { 
+   color:  var(--color-barra3);
+}
+
+#footer_copyright { 
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    padding: 0.5rem;
+    font-size: 13px;
+
+}
+
+@media screen and (max-width:768px) {
+    #footer_content { 
+        grid-template-columns:  repeat(2, 1fr);
+        gap:  2rem;
+    }
+}
+
+@media screen and (max-width:426px) {
+    #footer_content { 
+        grid-template-columns:  repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
