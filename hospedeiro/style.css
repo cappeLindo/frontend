@@ -1,12 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 
 body { 
     background-color: rgb(226, 230, 231);
 }
 
-*{padding: 0; margin: 0;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .container { 
     width: 335px;
@@ -16,55 +18,32 @@ body {
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.212);
     margin: auto;
     display: flex;
-    top: 1.3rem;
+    flex-direction: column; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
     position: relative;
-    
 }
 
 .site { 
     font-family: JetBrains Mono;
-    position: relative;
     text-align: center;
-    top: 6rem;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    z-index: 10; 
+    display: flex;
+    position: relative;
+    bottom : 3.3rem;
+    z-index: 10;
 }
 
 .textos { 
     display: flex;
-    margin: auto;
-    text-align: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 5rem; /* Espaço entre os botões */
     font-family: JetBrains Mono;
     font-size: 18px;
-    margin-bottom: 3.5rem;
-    
-   
 }
 
-.logo { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 2rem;
-    filter:  drop-shadow(5px 3px 5px rgba(33, 48, 59, 0.733));
-}
-
-
-.footer { 
-    font-family: JetBrains Mono;
-    top: 3rem;
-    position: relative;
-    text-align: center;
-  
-}
-
-.textos p {
+.textos a.button {
     color: black;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    text-decoration: none; /* Remove sublinhado dos links */
     background-color: rgb(73, 73, 73);
     width: 170px;
     height: 50px;
@@ -73,10 +52,33 @@ body {
     justify-content: center;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.textos p:hover {
+.textos a.button:hover {
     color: white;
     background-color: rgba(71, 71, 71, 0.781);
-    box-shadow:  5px 5px 9px rgba(0, 0, 0, 0.205);
-}  
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.205);
+}
+
+.textos a.button:active {
+    background-color: rgba(71, 71, 71, 0.9);
+}
+
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.7rem;
+    margin-bottom: 2rem; 
+    filter: drop-shadow(5px 3px 5px rgba(33, 48, 59, 0.733));
+}
+
+/* Estilos para o footer */
+.footer { 
+    font-family: JetBrains Mono;
+    text-align: center;
+    margin-top: 2rem;
+}
