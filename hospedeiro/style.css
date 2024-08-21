@@ -42,7 +42,7 @@ body {
 }
 
 .textos a.button {
-    color: black;
+    color: rgb(211, 211, 211);
     text-decoration: none; /* Remove sublinhado dos links */
     background-color: rgb(73, 73, 73);
     width: 170px;
