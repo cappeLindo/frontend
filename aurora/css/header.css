@@ -162,20 +162,20 @@
 nav li a { 
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
 }
 
 .dropdown-menu {
     width: 160px;
-    height: 80px;
+    height: 100px;
     background-color: #1E1E1E;
     position: absolute;
     margin-top: 0.6rem;
     right: 0.4rem;
     text-align: center;
     border-radius: 10px;
-    border: 2px solid var(--color-barra1);
+    border: 2px solid rgb(97, 97, 97);
     z-index: 1000;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.089);
     list-style-type: none;
@@ -184,7 +184,7 @@ nav li a {
 
 .dropdown-menu a {
     display: block;
-    padding-top: 0.8rem;
+    padding-top: 1.24rem;
     text-decoration: none;
 }
 
