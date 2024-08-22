@@ -104,6 +104,10 @@ footer {
     #footer_content { 
         grid-template-columns:  repeat(2, 1fr);
         gap:  2rem;
+        font-size: 12px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
     }
 }
 
@@ -111,5 +115,16 @@ footer {
     #footer_content { 
         grid-template-columns:  repeat(1, 1fr);
         padding: 3rem 2rem;
+    }
+
+    #footer_social_media .footer-link i { 
+        font-size:  2.2rem;
+    }
+
+    #footer_social_media { 
+        gap:  1.2rem;
+        align-items: center;
+        justify-content: center;
+        
     }
 }

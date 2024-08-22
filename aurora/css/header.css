@@ -1,7 +1,6 @@
 *{margin: 0; padding: 0;}
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Knewave&family=Press+Start+2P&display=swap');
 :root { 
     --color-header: #1E1E1E;
     --color-pesquisa: #d9d9d9;
@@ -10,7 +9,7 @@
     --color-barra2: #64DBB9;
     --color-barra3: #A037DD;
 }
-
+/*header*/
 .container {
     width: 100%;
     height: 88px;
@@ -49,8 +48,22 @@
     display: flex;
     position: relative;
     top: 1.1rem;
+    padding-right: 1rem;
 }
 
+#config { 
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: end;
+    margin-left: 1.3rem;
+    width: 50px;
+}
+
+/*final do header*/
+
+
+/*barra de pesquisa*/
 .search { 
     display: flex;
     align-items: center;
@@ -60,15 +73,18 @@
     background-color:  var(--color-pesquisa);
     font-family:  JetBrains Mono;
     padding:  5px 1px;
-    border-radius: 7px;
+    border-radius: 8px;
     justify-content: center;
     
 
 }
 
 #searchInput { 
-    padding: 4px;
+    padding: 5px;
+    margin-left: 0.4rem;
     border: none;
+    font-size: 15px;
+    font-weight: 500;
     background-color: transparent;
     width: 100%;
     outline: none;
@@ -78,29 +94,30 @@
 
 .search label { 
     height: 25px;
-
 }
+/*final da barra de pesquisa*/
 
-@media screen and (max-width: 426px) {
-    .aurora {
-        display: none; /* Oculta o elemento em telas pequenas */
-    }
+@media screen and (max-width: 526px) {
+
 
     .logo { 
         display: flex;
         position: relative;
-        right: 5%;
+        right: 3%;
     }
 
     .logo img { 
         display: flex;
-        width: 30px;
+        width: 35px;
      
     }
    
     .search { 
         width:90%;
-        margin-right: 3rem;
+    }
+
+    #searchInput { 
+        padding: 3px;
     }
 
 }
@@ -120,7 +137,7 @@
     align-items: center;
     display: flex;
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 @media only screen and (max-width: 626px) {    
@@ -133,5 +150,10 @@
     .navegacao { 
         gap: 5%;
     }
+
+    #config { 
+        width: 35px;
+    }
     
 }
+
