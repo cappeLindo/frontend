@@ -5,3 +5,15 @@ body {
 
 *{margin: 0; padding:  0 } 
 
+.conteudo { 
+    width: 90%;
+    height: 700px;
+    background-color: rgb(199, 199, 199);
+    margin-top:  80px;
+    position: relative;
+    top: 35px;
+    border-radius: 30px;
+    bottom: 50px;
+    display: flex;
+    margin: auto;
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap');
 body { 
     background-color: rgb(226, 230, 231);
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .container { 
-    width: 335px;
+    width: 340px;
     height: 470px;
     border-radius: 2rem;
     background-color: rgb(255, 255, 255);
@@ -42,7 +42,7 @@ body {
 }
 
 .textos a.button {
-    color: black;
+    color: rgb(236, 236, 236);
     text-decoration: none; /* Remove sublinhado dos links */
     background-color: rgb(73, 73, 73);
     width: 170px;
@@ -73,7 +73,29 @@ body {
     align-items: center;
     margin-top: 1.7rem;
     margin-bottom: 2rem; 
-    filter: drop-shadow(5px 3px 5px rgba(33, 48, 59, 0.733));
+    font-size: 52px;
+    font-family: 'Press Start 2P';
+    font-weight: 900;
+}
+
+.logo p {
+    text-transform: uppercase;
+    background:  linear-gradient(45deg, rgb(141, 141, 141), rgb(58, 57, 57), rgb(41, 38, 38), rgb(141, 141, 141));
+    background-size: 400% 100%;
+    animation:  degrade 7s linear infinite alternate;
+    -webkit-background-clip:  text;
+    -webkit-text-fill-color:  transparent;
+    text-shadow:  4px 2px 6px  rgba(0, 0, 0, 0.24);
+}
+
+@keyframes degrade {
+     0%{
+        background-position-x: 0% ;
+     }
+
+     100%{ 
+        background-position: 400%;
+     }
 }
 
 /* Estilos para o footer */
