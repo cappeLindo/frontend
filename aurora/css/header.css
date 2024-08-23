@@ -192,6 +192,6 @@ nav li a {
     display: block;
 } 
 
-ul.dropdown{
+.dropdown {
     list-style-type: none; 
 }
