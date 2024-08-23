@@ -108,7 +108,7 @@ function acessar() {
       var minutos = min.getMinutes()
       var sec = new Date()
       var segundos = sec.getSeconds()
-    msg.innerHTML = `agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos.`
+    msg.innerHTML = `${hora} horas, ${minutos} minutos e ${segundos} segundos.`
     if (hora >= 0 && hora <= 12) {
         foto.src = 'natureza_dia.jpeg'
         document.body.style.background = '#4b6e8c'
