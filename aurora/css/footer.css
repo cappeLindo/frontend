@@ -6,9 +6,6 @@
 
 }
 
-body {
-    font-family: "JetBrains Mono";
-}
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
 
@@ -84,6 +81,7 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    font-family: "JetBrains Mono";
 }
 
 .footer-list .footer-link { 
@@ -101,6 +99,7 @@ footer {
     background-color: #333333;
     padding: 0.5rem;
     font-size: 13px;
+    font-family: "JetBrains Mono";
 
 }
 
@@ -112,6 +111,7 @@ footer {
         align-items: center;
         text-align: center;
         margin: auto;
+        font-family: "JetBrains Mono";
     }
 }
 
