@@ -1,3 +1,7 @@
+body { 
+    font-family: "JetBrains Mono";
+}
+
 *{margin: 0; padding: 0;}
 
 
@@ -21,7 +25,7 @@
     justify-content: space-between; 
     padding: 0 1.5rem; 
     box-sizing: border-box;
-    font-family: "JetBrains Mono";
+    
 }
 
 .barra-colorida { 
@@ -81,7 +85,7 @@
     width: 100%;
     outline: none;
     color: #666666;
-    font-family: "JetBrains Mono";
+    
    
 }
 
@@ -131,12 +135,12 @@
     display: flex;
     text-align: center;
     font-size: 17px;
-    font-family: "JetBrains Mono";
+    
 }
 
 @media only screen and (max-width: 626px) {    
     .navegacao a { font-size: 10px;
-        font-family: "JetBrains Mono";
+        
 }   
     .navegacao { 
         gap: 5%;
