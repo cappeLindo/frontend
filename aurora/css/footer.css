@@ -20,11 +20,12 @@
     --color-neutro-20: #ffffff;
 }
 
-main { 
+/*main { 
     height: 80vh;
-}
+}*/
 
 footer { 
+    padding-top: 4rem;
     width: 100%;
     color: var(--color-neutro);
 }
