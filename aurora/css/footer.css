@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing:  1px;
-    font-family:  JetBrains Mono;
 
 }
 
 body {
-    font-family: 'JetBrains Mono'
+    font-family: "JetBrains Mono";
 }
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');

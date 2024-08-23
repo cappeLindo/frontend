@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0;}
 
 body { 
-    font-family: 'JetBrains Mono'
+    font-family: "JetBrains Mono";
 }
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Knewave&family=Press+Start+2P&display=swap');
@@ -65,7 +65,6 @@ body {
     width: 750px;
     margin: auto;
     background-color:  var(--color-pesquisa);
-    font-family:  'JetBrains Mono';
     padding:  5px 1px;
     border-radius: 8px;
     justify-content: center;
