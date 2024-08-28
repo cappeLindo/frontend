@@ -145,14 +145,14 @@ body {
 }
 
 .navegacao a {
-    text-decoration: none; /* Remove o sublinhado do texto */
-    font-size: 17px; /* Tamanho da fonte */
-    transition: color 0.3s; /* Transição suave para a cor do texto */
+    text-decoration: none; 
+    font-size: 17px; 
+    transition: color 0.3s; 
 }
 
-/* Efeito de hover para itens de navegação */
+
 .navegacao a:hover {
-    color: #A037DD; /* Cor roxa no hover */
+    color: #A037DD; 
 }
 
 @media only screen and (max-width: 626px) {    
@@ -196,7 +196,7 @@ nav li a {
     z-index: 1000;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.089);
     list-style-type: none;
-    display: none; /* Mantenha o menu oculto por padrão */
+    display: none; 
 }
 
 .dropdown-menu a {
