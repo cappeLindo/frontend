@@ -1,68 +1,62 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.card-1 { 
+.card {
     background-color: #fff;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 370px;
     border-radius: 12px;
     box-shadow: 4px 4px 12px #aaa;
-    flex-direction: column;
-    background-image: url('nada.png');
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-
-.card-1 img { 
-    width: 100%;
-    height: 130px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.card-1 div { 
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    padding-bottom: 1rem;
-    align-items: center;
-    
+    background-image: url('nada.png');
+    overflow: hidden;
 }
 
-.card-1 span { 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: green;
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
+.card div {
+    padding: 1rem;
+    text-align: center;
+}
 
-.card-1 h1 { 
+.card h1 {
     font-size: 1.3rem;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    margin-top: 1rem;
-    padding-bottom: 10px;
-    
+    margin: 1rem 0;
 }
 
-.card-1 h2 { 
-    font-size: 14px;
+.card h2 {
+    font-size: 1rem;
     color: #aaa;
-    padding-bottom: 10px;
+    margin: 0.5rem 0;
 }
 
-.card-1 button { 
+.card button {
     background: linear-gradient(-45deg, #01B1FC, #A037DD);
     height: 35px;
     border: none;
-    padding: 1px;
-    width: 120px;
+    padding: 0.5rem 1rem;
+    width: 100%;
     color: #fff;
     border-radius: 7px;
     font-size: 14px;
     font-weight: 600;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
 }
 
-.conteudo { 
-    text-align: start;
-    
+.card button:hover {
+    background: linear-gradient(-45deg, #A037DD, #01B1FC);
 }
 

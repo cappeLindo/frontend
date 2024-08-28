@@ -101,12 +101,18 @@ body {
         display: flex;
         position: relative;
         right: 3%;
+        
     }
 
     .logo img { 
         display: flex;
-        width: 35px;
+        
+    
      
+    }
+
+    .produtos-gerais { 
+        font-size: 20px;
     }
    
     .search { 
@@ -127,7 +133,7 @@ body {
 }
 
 .navegacao a { 
-    color: #ccc;
+    color: #ffffff;
     text-decoration: none;
     position: relative;
     justify-content: center;
@@ -136,6 +142,17 @@ body {
     text-align: center;
     font-size: 17px;
     
+}
+
+.navegacao a {
+    text-decoration: none; /* Remove o sublinhado do texto */
+    font-size: 17px; /* Tamanho da fonte */
+    transition: color 0.3s; /* Transição suave para a cor do texto */
+}
+
+/* Efeito de hover para itens de navegação */
+.navegacao a:hover {
+    color: #A037DD; /* Cor roxa no hover */
 }
 
 @media only screen and (max-width: 626px) {    
@@ -149,6 +166,10 @@ body {
     #config { 
         width: 35px;
         margin-top: 0.3rem;
+    }
+
+    .logo img {
+        width: 150px;
     }
     
 }
