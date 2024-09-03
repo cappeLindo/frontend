@@ -10,14 +10,17 @@ body {
 .produtos-gerais { 
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     color: #444343;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .cima { 
     display: flex;
     padding-top: 2rem;
     padding-left: 2rem;
+    padding-bottom: 4rem;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
