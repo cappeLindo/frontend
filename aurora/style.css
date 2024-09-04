@@ -2,6 +2,8 @@
 body { 
     background-color:  #D9D9D9;
     font-family: "JetBrains Mono";
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    font-family: "Poppins";
 }
 
 *{margin: 0; padding:  0 } 
@@ -9,8 +11,8 @@ body {
 
 .produtos-gerais { 
     text-align: center;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
     color: #444343;
     font-size: 24px;
     font-weight: 600;
@@ -18,7 +20,7 @@ body {
 
 .cima { 
     display: flex;
-    padding-top: 2rem;
+    padding-top: 4.26rem;
     padding-left: 2rem;
     padding-bottom: 4rem;
     text-decoration: none;
@@ -28,4 +30,54 @@ body {
     height: 4px;
     color: #313131;
     text-shadow:  2px 4px 4px rgba(2, 2, 2, 0.274);
+}
+
+
+
+.imagem-p img{ 
+    display: flex;
+    margin: auto;
+    align-self: center;
+    justify-content: center;
+    width: 355px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 4px rgba(0, 0, 0, 0.562);
+    box-shadow:  4px 6px 4px  rgba(0, 0, 0, 0.149);
+    margin-top: 5rem;
+}
+
+.sobre-mais { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    
+}
+
+table th, table td{ 
+    color: #ffffff;
+    border: 1px solid rgb(171, 171, 172);
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.tabela { 
+    width: 67%; /* Ajuste a largura conforme necessário */
+    margin: 4rem auto; /* Alinhamento centralizado com margem automática */
+    background-color: #737272;
+    padding: 1rem; /* Padding opcional */
+    display: flex; /* Adiciona flexbox para centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 10px;
+}
+
+table {
+    width: 95%; /* Garante que a tabela use a largura disponível */
+    border-collapse: collapse; /* Une as bordas da tabela */
+   
 }
