@@ -62,7 +62,7 @@ body {
 
 table th, table td{ 
     color: #ffffff;
-    border: 1px solid rgb(171, 171, 172);
+    border:3px solid rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
     padding: 10px;
 }
@@ -70,15 +70,29 @@ table th, table td{
 .tabela { 
     width: 67%; /* Ajuste a largura conforme necessário */
     margin: 4rem auto; /* Alinhamento centralizado com margem automática */
-    background-color: #737272;
+    background-color: #ffffff;
     padding: 1rem; /* Padding opcional */
     display: flex; /* Adiciona flexbox para centralização */
     justify-content: center; /* Centraliza horizontalmente */
     border-radius: 10px;
+    box-shadow:  4px 4px 2px 0 rgba(0, 0, 0, 0.119);
+    background: linear-gradient(65deg, #8b3598c5, rgb(5, 147, 182));
 }
+
+table th {
+    font-weight: 900;
+}
+
 
 table {
     width: 95%; /* Garante que a tabela use a largura disponível */
-    border-collapse: collapse; /* Une as bordas da tabela */
+    border-collapse: separate; /* Une as bordas da tabela */
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow: hidden;
    
+}
+
+#preco-p { 
+    color: rgb(55, 252, 0);
 }
