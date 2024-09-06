@@ -1,5 +1,5 @@
 body { 
-    font-family: "JetBrains Mono";
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -86,6 +86,7 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .footer-list .footer-link { 

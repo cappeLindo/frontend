@@ -19,33 +19,65 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.cima { 
-    display: flex;
-    padding-top: 4.26rem;
-    padding-left: 2rem;
-    padding-bottom: 4rem;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    width: 250px;
-    height: 4px;
-    color: #313131;
-    text-shadow:  2px 4px 4px rgba(2, 2, 2, 0.274);
+.cima {
+    display: block; /* Faz o link ocupar toda a largura disponível */
+    text-align: center; /* Centraliza o texto dentro do link */
+    margin: 2rem auto; /* Adiciona uma margem automática em cima e embaixo para centralizar o botão */
+    margin-top: 7rem;
+    margin-bottom: 7.1rem;
+}
+
+.cima button {
+    background-color: #313131; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none; /* Remove as bordas padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    padding: 10px 20px; /* Adiciona padding interno ao botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    font-weight: 600; /* Define o peso da fonte do botão */
+    cursor: pointer; /* Muda o cursor para pointer quando sobre o botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+    transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição suave para as mudanças de cor e transformação */
+}
+
+.cima button:hover {
+    background-color: #444; /* Altera a cor de fundo quando o botão está em foco */
+}
+
+.cima button:focus {
+    outline: none; /* Remove o contorno padrão de foco */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão ao ser focado */
 }
 
 
-
-.imagem-p img{ 
+.imagem-p {
     display: flex;
-    margin: auto;
-    align-self: center;
-    justify-content: center;
-    width: 355px;
-    height: 200px;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    margin-top: 5rem;
+}
+
+.imagem-p img {
+    width: 100%;
+    height: auto;
+    max-width: 355px; /* Limita a largura máxima para manter um tamanho razoável */
     border-radius: 10px;
     border: solid 4px rgba(0, 0, 0, 0.562);
-    box-shadow:  4px 6px 4px  rgba(0, 0, 0, 0.149);
-    margin-top: 5rem;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.149);
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+/* Adiciona regras para telas menores */
+@media (max-width: 768px) {
+    .imagem-p img {
+        max-width: 90%; /* Ajusta a largura máxima em dispositivos móveis */
+        margin: 1rem auto; /* Adiciona um pouco de margem para evitar que a imagem fique grudada nas bordas */
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-p img {
+        max-width: 85%; /* Ajusta a largura máxima para se ajustar completamente na tela em dispositivos móveis muito pequenos */
+    }
 }
 
 .sobre-mais { 
@@ -60,37 +92,61 @@ body {
     
 }
 
-table th, table td{ 
-    color: #ffffff;
-    border:3px solid rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-    padding: 10px;
+.detalhe-produto {
+    padding: 1rem; /* Adiciona um pouco de padding ao redor do contêiner */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
 }
 
-.tabela { 
-    width: 67%; /* Ajuste a largura conforme necessário */
-    margin: 4rem auto; /* Alinhamento centralizado com margem automática */
+.tabela {
+    max-width: 40%; /* Define a largura máxima da tabela como 80% da largura do contêiner */
+    margin: 4rem auto; /* Centraliza a tabela com margem automática */
     background-color: #ffffff;
     padding: 1rem; /* Padding opcional */
-    display: flex; /* Adiciona flexbox para centralização */
-    justify-content: center; /* Centraliza horizontalmente */
     border-radius: 10px;
-    box-shadow:  4px 4px 2px 0 rgba(0, 0, 0, 0.119);
+    box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.119);
     background: linear-gradient(65deg, #8b3598c5, rgb(5, 147, 182));
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
 }
-
-table th {
-    font-weight: 900;
-}
-
 
 table {
-    width: 95%; /* Garante que a tabela use a largura disponível */
+    width: 100%; /* Garante que a tabela use a largura disponível do contêiner */
     border-collapse: separate; /* Une as bordas da tabela */
     border-radius: 5px;
     border-spacing: 0;
-    overflow: hidden;
-   
+    overflow: hidden; /* Garante que não haja overflow fora da tabela */
+}
+
+table th, table td {
+    color: #ffffff;
+    border: 3px solid rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+    text-align: left; /* Alinha o texto à esquerda para melhor legibilidade */
+}
+
+/* Adiciona regras para telas menores */
+@media (max-width: 768px) {
+    .tabela {
+        max-width: 90%; /* Ajusta a largura máxima em dispositivos menores */
+        margin: 2rem auto; /* Ajusta a margem para dispositivos menores */
+        padding: 0.5rem; /* Reduz o padding para dispositivos menores */
+    }
+
+    table th, table td {
+        font-size: 16px; /* Reduz o tamanho da fonte para dispositivos menores */
+        padding: 15px; /* Ajusta o padding para dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .tabela {
+        max-width: 80%; /* Ajusta a largura máxima em dispositivos muito pequenos */
+    }
+
+    table th, table td {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte em dispositivos muito pequenos */
+        padding: 11px; /* Ajusta o padding para dispositivos muito pequenos */
+    }
 }
 
 #preco-p { 

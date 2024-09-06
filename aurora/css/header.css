@@ -131,6 +131,7 @@ body {
     justify-content: center;
     gap: 14%;
     height: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 .navegacao a { 
@@ -142,6 +143,7 @@ body {
     display: flex;
     text-align: center;
     font-size: 17px;
+    font-weight: 400;
     
 }
 
@@ -171,6 +173,11 @@ body {
 
     .logo img {
         width: 150px;
+    }
+
+    .navegacao .home { 
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
     }
     
 }
