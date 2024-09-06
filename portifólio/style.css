@@ -64,14 +64,22 @@ header {
     width: 140px;
     height: 45px;
     justify-content: center;
+    background-color: #dadada40;
     text-align: center;
     align-items: center;
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
     font-family: "JetBrains Mono", monospace;
-    font-weight: 700;
+    color: #fbf7f7;
+    font-weight: 500; 
+    transition: 0.5s ease;
 }
+
+.opcoes button:hover { 
+      background-color: #5f095b55;
+}
+
 
 .opcoes a {
     text-decoration: none;
