@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+#fundo_site {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fundo_site img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.icons {
+    font-size: 3rem;
+    margin-top: 1.9rem;
+    color: #c4c4c4;
+    margin-bottom: 1.7rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 4px rgba(58, 58, 58, 0.395);
+    margin-top: 4.6rem;
+}
+
+.opcoes button {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 140px;
+    height: 45px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+}
+
+.opcoes a {
+    text-decoration: none;
+}
+
+header h1, header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 1.4rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #cacaca;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        justify-content: flex-start;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .name_me {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .icons {
+        font-size: 2.5rem;
+        margin-top: 1.9rem;
+    }
+
+    .opcoes {
+        margin-top: 1rem;
+    }
+
+    .opcoes button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        margin: 1rem;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
