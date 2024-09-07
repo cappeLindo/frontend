@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
     background-color: #f0f0f0;
-    overflow-x: hidden; /* Garante que nada além dos limites será exibido */
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -10,7 +10,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow-x: hidden; /* Garante que nada além dos limites será exibido */
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -47,9 +47,7 @@ header {
     align-items: center;
     text-align: center;
     color: #fff;
-    min-height: 600px; 
-
-    
+    min-height: 600px;
 }
 
 #eu {
@@ -57,7 +55,6 @@ header {
     margin: 0;
 }
 
-/* Estilos adicionais */
 .foto-perfil {
     border-radius: 50%;
     width: 200px;
@@ -66,8 +63,6 @@ header {
     margin-bottom: 10px;
     border: solid 4px rgba(58, 58, 58, 0.395);
 }
-
-/*card*/
 
 .container {
     position: absolute;
@@ -78,26 +73,23 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 650px; 
+    min-height: 650px;
     display: flex;
     flex-direction: column;
 }
 
-
-.container , #projeto {
+.container, #projeto {
     color: #fbf7f7;
 }
 
-.card { 
+.card {
     width: 340px;
     height: 130px;
     background-color: #ffffff;
     border-radius: 15px;
 }
 
-
-
-.card img { 
+.card img {
     width: 60px;
     height: 60px;
     align-items: start;
@@ -105,17 +97,7 @@ header {
     display: flex;
     margin-top: 2rem;
     margin-left: 1rem;
-    
-
 }
-
-
-
-
-
-
-
-
 
 .name_me {
     font-size: 2rem;
@@ -128,15 +110,13 @@ h2 {
 }
 
 .voltar {
-    display: flex;
     position: absolute;
-    bottom: 60px; /* Ajusta a posição vertical */
-    left: 2rem; /* Ajusta a posição horizontal */
+    bottom: 80px; /* Ajusta a posição vertical para ficar mais distante do rodapé */
+    left: 2rem;
     z-index: 1;
-    
 }
 
-.voltar button { 
+.voltar button {
     border: none;
     width: 95px;
     height: 40px;
@@ -146,18 +126,17 @@ h2 {
     background-color: #ffffff4d;
     color: #fff;
     transition: 0.5s ease;
-
 }
 
-.voltar button:hover { 
+.voltar button:hover {
     background-color: #5f095b55;
 }
 
-strong { 
+strong {
     color: yellow;
 }
 
-#mais { 
+#mais {
     color: #ffffff;
     font-size: 19px;
     margin-top: 2rem;
@@ -173,9 +152,9 @@ strong {
 
 .opcoes {
     display: flex;
-    flex-direction: column; /* Alinha botões em coluna */
-    align-items: center; /* Centraliza os botões */
-    gap: 1rem; /* Espaçamento entre botões */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .opcoes button {
@@ -197,7 +176,7 @@ strong {
     transition: 0.5s ease;
 }
 
-.opcoes button:hover { 
+.opcoes button:hover {
     background-color: #5f095b55;
 }
 
@@ -219,7 +198,7 @@ strong {
 /* Media Query para telas de notebooks */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     header {
-        max-width: 80%; /* Ajusta a largura para se adaptar melhor */
+        max-width: 80%;
         padding: 20px;
     }
 
@@ -260,7 +239,7 @@ strong {
 /* Media Query para dispositivos móveis */
 @media only screen and (max-width: 768px) {
     header {
-        max-width: 90%; /* Ajusta a largura para dispositivos móveis */
+        max-width: 90%;
         padding: 20px;
     }
 
@@ -274,7 +253,7 @@ strong {
         margin-top: 0.4rem;
     }
 
-    #mais { 
+    #mais {
         margin-top: 2rem;
         font-size: 14px;
     }
@@ -300,11 +279,11 @@ strong {
         font-size: 13px;
     }
 
-    #eu { 
+    #eu {
         font-size: 28px;
     }
- 
-    .container, #projeto { 
+
+    .container, #projeto {
         font-size: 14px;
     }
 }
