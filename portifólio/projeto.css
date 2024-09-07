@@ -1,0 +1,132 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "JetBrains Mono", monospace;
+      background-image: url('img/folha.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fbf7f7;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  body > footer {
+      margin-top: auto;
+  }
+  
+  footer { 
+      text-align: center;
+      color: #cacaca;
+  }
+  
+  #projeto { 
+      text-align: center;
+  }
+  
+  .container { 
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+  }
+  
+  .card { 
+      display: flex;
+      align-items: center;
+      width: 320px;
+      height: 100px; /* Ajuste a altura se necessário */
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px; /* Adiciona espaçamento entre os cartões */
+  }
+  
+  .card img { 
+      width: 70px;
+      height: auto;
+      margin-right: 10px;
+  }
+  
+  .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+  }
+  
+  #nome-projeto { 
+      color: #535151;
+      margin: 0;
+      margin-bottom: 15px;
+      padding-top: 10px;
+      margin-left: 1.4rem;
+  }
+  
+  voltar {
+      display: flex;
+      bottom: 60px; /* Ajusta a posição vertical */
+      left: 2rem; /* Ajusta a posição horizontal */
+  }
+  
+  .voltar button { 
+      border: none;
+      width: 95px;
+      height: 40px;
+      border-radius: 10px;
+      font-family: "JetBrains Mono", monospace;
+      font-weight: 500;
+      background-color: #ffffff4d;
+      color: #fff;
+      transition: 0.5s ease;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      font-size: 14px;
+  
+  }
+  
+  .voltar button:hover { 
+      background-color: #5f095b55;
+  }
+  .ver {
+      display: flex;
+      justify-content: center;
+      margin-right: 20px;
+      margin-bottom: 15px;
+  }
+  
+  button {
+      background-color: #cdcdcd;
+      color: #535151;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 16px;
+      transition: background-color 0.5s ease;
+  }
+  
+  button:hover {
+      background-color: #53535330;
+  }
+  
+  @media only screen and (max-width: 768px) { 
+      footer {
+          font-size: 13px;
+      }
+  
+      #projeto { 
+          font-size: 30px;
+      }
+  }
+  

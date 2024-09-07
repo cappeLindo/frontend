@@ -8,7 +8,8 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden; /* Garante que nada além dos limites será exibido */
+    overflow-x: hidden; /* Garante que nada além dos limites será exibido */
+    overflow-y: hidden;
 }
 
 #fundo_site img {
@@ -64,6 +65,56 @@ header {
     border: solid 4px rgba(58, 58, 58, 0.395);
 }
 
+/*card*/
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 650px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container , #projeto {
+    color: #fbf7f7;
+}
+
+.card { 
+    width: 340px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+
+
+.card img { 
+    width: 60px;
+    height: 60px;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    
+
+}
+
+
+
+
+
+
+
+
+
 .name_me {
     font-size: 2rem;
     margin-top: 10px;
@@ -85,7 +136,7 @@ h2 {
 
 .voltar button { 
     border: none;
-    width: 80px;
+    width: 95px;
     height: 40px;
     border-radius: 10px;
     font-family: "JetBrains Mono", monospace;
@@ -152,7 +203,7 @@ strong {
     text-decoration: none;
 }
 
-footer {
+.copy {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -249,5 +300,9 @@ footer {
 
     #eu { 
         font-size: 28px;
+    }
+ 
+    .container, #projeto { 
+        font-size: 14px;
     }
 }
