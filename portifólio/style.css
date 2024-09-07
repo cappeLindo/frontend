@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
     background-color: #f0f0f0;
+    overflow-x: hidden; /* Garante que nada além dos limites será exibido */
+    overflow-y: hidden;
 }
 
 #fundo_site {
