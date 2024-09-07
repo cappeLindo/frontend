@@ -4,15 +4,14 @@ body {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
     background-color: #f0f0f0;
-    overflow-x: hidden; /* Evita rolagem horizontal */
-    overflow-y: hidden; /* Evita rolagem vertical */
+    overflow: hidden; /* Evita rolagem horizontal e vertical */
 }
 
 #fundo_site {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /* Garante que nada além dos limites será exibido */
 }
 
 #fundo_site img {
@@ -23,27 +22,19 @@ body {
 
 header {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo no meio da tela */
     width: 100%;
-    height: 100vh;
+    max-width: 600px; /* Limita a largura para evitar que o conteúdo se estenda muito */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     text-align: center;
     color: #fff;
-    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     box-sizing: border-box;
     z-index: 1;
-}
-
-.icons {
-    font-size: 3rem;
-    margin-top: 1.9rem;
-    color: #c4c4c4;
-    margin-bottom: 1.7rem;
 }
 
 .foto-perfil {
@@ -53,18 +44,39 @@ header {
     object-fit: cover;
     margin-bottom: 10px;
     border: solid 4px rgba(58, 58, 58, 0.395);
-    margin-top: 4.6rem;
+}
+
+.name_me {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.1rem;
+}
+
+.icons {
+    font-size: 2.7rem;
+    margin-top: 1rem;
+    color: #c4c4c4;
+    margin-bottom: 1.7rem;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column; /* Alinha botões em coluna */
+    align-items: center; /* Centraliza os botões */
+    gap: 1rem; /* Espaçamento entre botões */
 }
 
 .opcoes button {
-    margin-top: 1.8rem;
     display: flex;
-    flex-direction: column;
     border: none;
     width: 140px;
     height: 45px;
     justify-content: center;
-    background-color: #dadada40;
+    background-color: #dadada9a;
     text-align: center;
     align-items: center;
     font-size: 16px;
@@ -73,26 +85,16 @@ header {
     font-family: "JetBrains Mono", monospace;
     color: #fbf7f7;
     font-weight: 500; 
+    margin: 0.2rem;
     transition: 0.5s ease;
 }
 
 .opcoes button:hover { 
-      background-color: #5f095b55;
+    background-color: #5f095b55;
 }
-
 
 .opcoes a {
     text-decoration: none;
-}
-
-header h1, header h2 {
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    margin-top: 1.4rem;
-    margin-bottom: 10px;
 }
 
 footer {
@@ -106,45 +108,81 @@ footer {
     z-index: 1;
 }
 
-@media only screen and (max-width: 768px) {
+/* Media Query para telas de notebooks */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     header {
+        max-width: 80%; /* Ajusta a largura para se adaptar melhor */
         padding: 20px;
-        justify-content: flex-start;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.6);
     }
 
     .foto-perfil {
-        width: 150px;
-        height: 150px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        width: 180px;
+        height: 180px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .name_me {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-top: 1rem;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 0.5rem;
     }
 
     .icons {
-        font-size: 2.5rem;
-        margin-top: 1.9rem;
-    }
-
-    .opcoes {
+        font-size: 2rem;
         margin-top: 1rem;
     }
 
     .opcoes button {
         width: 120px;
         height: 40px;
-        font-size: 16px;
+        font-size: 14px;
         margin: 1rem;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+/* Media Query para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    header {
+        max-width: 90%; /* Ajusta a largura para dispositivos móveis */
+        padding: 20px;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name_me {
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
+
+
+    h2 {
+        font-size: 1rem;
+        margin-top: 0.1rem;
+    }
+
+    .icons {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .opcoes button {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0.4rem;
+    
     }
 
     footer {
