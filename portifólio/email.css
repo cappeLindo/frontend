@@ -1,0 +1,170 @@
+body {
+      margin: 0;
+      padding: 0;
+     
+      font-family: "JetBrains Mono", monospace;
+      background-image: url('img/floresta.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+  }
+
+section { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding:10px;
+      background-color: rgba(255, 255, 255, 0.4);
+      width: 326px;
+      border-radius: 20px;
+      box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.083);
+  }
+
+section h2 { 
+      color: rgb(36, 36, 36);
+      font-size: 1.8rem;
+}
+
+section form { 
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+  }
+
+form label {
+     color: #252424; 
+     font-weight: 700;
+     margin: 4px;
+}
+
+form input { 
+      font-family: "JetBrains Mono", monospace;
+      padding: 12px;
+      outline: none;
+      border: 0;
+      margin-bottom: 14px;
+      font-size: 14px;
+      transition:  all 0.5s;
+}
+
+form input:focus { 
+      border-radius: 16px;
+}
+
+form textarea { 
+      padding: 10px;
+      outline: none;
+      border: none;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 14px;
+      margin-bottom: 24px;
+      transition: all 0.5s;
+}
+
+form textarea:focus {
+      border-radius: 16px;
+}
+
+form button { 
+      padding: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+      background-color: transparent;
+      color: rgb(38, 38, 38);
+      font-size: 14px;
+      transition:  all 0.7s;
+      border:  2px solid white;
+}
+
+form button:hover { 
+      background-color: #ffffff;
+      border-radius: 19px;
+}
+
+
+section button { 
+      padding: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+      background-color: transparent;
+      color: rgb(38, 38, 38);
+      font-size: 14px;
+      transition:  all 0.7s;
+      border:  2px solid white;
+      margin-top: 20px;
+}
+
+section button:hover {
+      background-color: #ffffff;
+      border-radius: 19px;
+}
+
+.main { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "JetBrains Mono", monospace;
+      background-image: url('img/floresta.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      flex-direction: column;
+}
+
+.text { 
+      color: #ffffff;
+      text-align: center;
+}
+
+.paragrafo { 
+      color: #ffffff;
+      margin-bottom: 50px;
+}
+
+.btn { 
+      padding: 12px 30px;
+      text-decoration: none;
+      background: white;
+      color: #252424;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.5s;
+}
+.btn:hover { 
+      border-radius: 19px;
+}
+
+/* Estilo para o container do botão "Voltar" */
+
+
+
+footer {
+      position: fixed; /* Fixa o footer no fundo da página */
+      bottom: 0; /* Posiciona o footer na parte inferior */
+      left: 0; /* Alinha o footer ao lado esquerdo da página */
+      width: 100%; /* Faz o footer ocupar toda a largura da página */
+      text-align: center; /* Alinha o texto do footer ao centro */
+      z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+      color: #cacaca;
+}
+
+@media only screen and (max-width: 768px) { 
+      footer p{
+            display: none;
+          
+      }
+
+}

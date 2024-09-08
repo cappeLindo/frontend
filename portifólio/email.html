@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="email.css">
+    <title>Email</title>
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="menssage" cols="30" rows="6" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="bf62efd8-3351-41d9-8d25-799b9cb06db8">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/portif%C3%B3lio/obrigado.html">
+        </form>
+        <a href="index.html"><button>Voltar</button></a>
+    </section>
+
+    <footer class="footer">
+        <p>&#169; 2024-2024. Todos os direitos do site reservado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
