@@ -42,7 +42,7 @@ html, body {
       border-radius: 15px;
       padding: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px; /* Adiciona espaçamento entre os cartões */
+      margin-bottom: 18px; /* Adiciona espaçamento entre os cartões */
   }
   
   .card img { 
