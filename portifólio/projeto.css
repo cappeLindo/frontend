@@ -3,7 +3,7 @@ html, body {
       padding: 0;
       height: 100%;
       font-family: "JetBrains Mono", monospace;
-      background-image: url('img/folha.jpg');
+      background-image: url('img/floresta.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -38,7 +38,7 @@ html, body {
       align-items: center;
       width: 300px;
       height: 100px; /* Ajuste a altura se necessário */
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.441);
       border-radius: 15px;
       padding: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -102,8 +102,8 @@ html, body {
   }
   
   button {
-      background-color: #cdcdcd;
-      color: #535151;
+    background-color: #ffffff60;
+      color: #ffffff;
       border: none;
       border-radius: 5px;
       padding: 10px 20px;
@@ -115,7 +115,7 @@ html, body {
   }
   
   button:hover {
-      background-color: #53535330;
+    background-color: #5f095b55;
   }
   
   @media only screen and (max-width: 768px) { 
