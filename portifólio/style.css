@@ -143,11 +143,15 @@ strong {
     width: 100%;
 }
 
-.icons {
+.icons{
     font-size: 2.7rem;
     margin-top: 1rem;
-    color: #c4c4c4;
     margin-bottom: 1.7rem;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #c4c4c4;
 }
 
 .opcoes {
