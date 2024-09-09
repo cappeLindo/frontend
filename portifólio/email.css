@@ -100,6 +100,7 @@ section button {
       transition:  all 0.7s;
       border:  2px solid white;
       margin-top: 20px;
+      border-radius: 19px;
 }
 
 section button:hover {
@@ -142,6 +143,7 @@ section button:hover {
       font-weight: 600;
       font-size: 16px;
       transition: all 0.5s;
+      border-radius: 19px;
 }
 .btn:hover { 
       border-radius: 19px;
@@ -159,6 +161,7 @@ footer {
       text-align: center; /* Alinha o texto do footer ao centro */
       z-index: 1000; /* Garante que o footer fique acima de outros elementos */
       color: #cacaca;
+      backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
 }
 
 @media only screen and (max-width: 768px) { 
