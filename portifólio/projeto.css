@@ -20,6 +20,7 @@ html, body {
   footer { 
       text-align: center;
       color: #cacaca;
+      backdrop-filter: blur(10px); 
       
   }
   
@@ -43,7 +44,7 @@ html, body {
       border-radius: 15px;
       padding: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-bottom: 18px; /* Adiciona espaçamento entre os cartões */
+      margin-bottom: 18px; 
   }
   
   .card img { 
@@ -69,8 +70,8 @@ html, body {
   
   voltar {
       display: flex;
-      bottom: 60px; /* Ajusta a posição vertical */
-      left: 2rem; /* Ajusta a posição horizontal */
+      bottom: 60px; 
+      left: 2rem; 
   }
   
   .voltar button { 
@@ -87,7 +88,6 @@ html, body {
       align-items: center;
       justify-content: center;
       margin-left: 2rem;
-      margin-top: 2rem;
       font-size: 14px;
   
   }

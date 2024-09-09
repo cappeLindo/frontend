@@ -154,14 +154,14 @@ section button:hover {
 
 
 footer {
-      position: fixed; /* Fixa o footer no fundo da página */
-      bottom: 0; /* Posiciona o footer na parte inferior */
-      left: 0; /* Alinha o footer ao lado esquerdo da página */
-      width: 100%; /* Faz o footer ocupar toda a largura da página */
-      text-align: center; /* Alinha o texto do footer ao centro */
-      z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      text-align: center; 
+      z-index: 1000; 
       color: #cacaca;
-      backdrop-filter: blur(10px); /* Adiciona o efeito de desfoque */
+      backdrop-filter: blur(10px); 
 }
 
 @media only screen and (max-width: 768px) { 

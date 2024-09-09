@@ -111,7 +111,7 @@ h2 {
 
 .voltar {
     position: absolute;
-    bottom: 80px; /* Ajusta a posição vertical para ficar mais distante do rodapé */
+    bottom: 80px; 
     left: 2rem;
     z-index: 1;
 }
